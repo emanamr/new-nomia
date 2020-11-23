@@ -1,0 +1,555 @@
+/*start basic style*/
+* {box-sizing: border-box}
+
+
+.clearfix{
+	clear: both;
+}
+h3{
+    color:#597a7c;
+    margin-top:9% ;
+    margin-bottom:5%;
+}
+hr.soften {
+    margin-top:5% ;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  border: 0;
+}
+/*end basic style*/
+
+
+/*start header style*/
+.angle {
+	padding: 10px 0 0 45px;
+	position: relative;
+	
+}
+.angle::before{
+	content: '';
+	display: block;
+	background-color: #7e9f9d;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0px;
+	bottom: 70px;
+	transform: skew(0deg,10deg);
+    z-index: 2;
+    box-shadow: 10px 10px 40px #540938;
+
+}
+.justify-content-end , .navbar-brand{
+    z-index: 3;
+}
+.nav .nav-item .nav-link{
+    color:#fff;
+}
+.nav .nav-item .nav-link:hover{
+    color:#540938;
+}
+@media screen and (max-width: 500px) {
+	.nav .nav-item .nav-link{
+    color:#540938;
+}	
+
+	.nav .nav-item .nav-link:hover{
+    color:#f580ca;
+}
+
+	.angle::before{
+	content: '';
+	display: block;
+	background-color: #7e9f9d;
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	bottom: 100px;
+	transform: skew(0deg,20deg);
+    z-index: 2;
+    box-shadow: 10px 10px 40px #540938;
+
+}
+
+
+
+}
+
+
+
+/*end header style*/
+
+/*start media style*/
+
+
+
+.text ul{
+        list-style:square;
+    }
+@media only screen and (min-width: 35em){
+	section{
+	margin-top: 3rem;
+    height: 25em;
+}
+	.text{
+    padding: 1em;
+    text-align: left;
+	height: 100%;
+	border-radius: 30px;
+	border-left:1px solid #768086;
+	border-top:1px solid #768086; 
+	box-shadow: 40px 40px #7e9f9d, 5px 5px 10px inset #7e9f9d;
+	
+}
+    .text {
+        max-width: 40%;
+        padding: 4em;
+	}
+	section h3{
+	width:100%;
+	margin:50px;
+}
+	
+section:nth-of-type(odd) .text{
+    margin-left: 0;
+    margin-right: 50px;
+	float:right;
+    text-align: left; 
+}
+section:nth-of-type(odd) .imge{
+    width: 40%;
+    height: auto;
+    float: left;
+	margin-top: 7%;
+	
+}
+section:nth-of-type(odd) .imge img{
+    width: 100%;
+	height: 100%;
+	border-radius: 10%;
+	box-shadow: 10px 10px 20px #540938;
+}
+
+section:nth-of-type(even) .text{
+    margin-right: 0;
+    margin-left: auto;
+	text-align: left; 
+	float:left;
+    margin-left:50px;
+}
+section:nth-of-type(even) .imge{
+	width: 40%;
+	height:300px;
+    float: right;
+    margin-top: 12%;
+     
+}
+section:nth-of-type(even) .imge img{
+    width: 100%;
+	height: 100%;
+	border-radius: 10%;
+	box-shadow: 10px 10px 20px #540938;
+}
+.overlay {
+  position: absolute;
+  bottom: 8px;
+  
+  background: rgba(89,122,124,.7); /* Black see-through */
+  color: #f1f1f1;
+  width: 94%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+}
+
+
+@media only screen and (max-width: 35em){      /*for mobile and tablet*/
+  
+	section{
+	margin-top: 3rem;
+    height: 35em;
+}
+	section .text {
+	margin-left: auto !important;
+	margin-right: auto;
+	margin-bottom:30px;
+	margin-top:30px;
+    text-align: left;
+    float: none !important;
+    width:90% !important;
+}
+
+section h3{
+	width:100%;
+	
+	padding-top:100px
+}
+.text {
+	padding: 4em;
+    height: 100%;
+	border-radius: none !important;
+    border: 1px solid #768086;
+    box-shadow:none;
+}	
+section .imge img{
+	margin-top:50px;
+    width: 100%;
+	height: 100%;
+	border-radius: none;
+	box-shadow: none;
+}
+section .imge{
+
+    width: 90%;
+    height: 300px;
+    float: none;
+    margin: auto;
+}
+.row{
+	width:100%;
+	
+}
+.hidden{
+	display: none;
+}
+.column {
+  float: left;
+  width: 33% !important;
+  padding: 5px;
+  height:150px;
+  
+}
+.row-h3{
+
+	margin-top: 95% !important;
+    margin-bottom: 5%;
+   
+}
+.ourteam h3{
+    margin-top:10%;
+  
+}
+.ourteam .team {
+    float: left;
+    width: 40% !important;
+	height: 250px !important;
+	margin-right:10% !important;
+}
+
+.team-text{
+	margin-top:20% !important;
+}
+
+.contact form input{
+    width:90%;
+    margin:10px auto auto 0px;
+    padding:5px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.contact form textarea {
+    width: 95%;
+    margin: 4% 3%;
+    height: 100px;
+    border-radius: 10px;
+    padding:15px 10px;
+    line-height:25px;
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 8px;
+  
+  background: rgba(89,122,124,.7); /* Black see-through */
+  color: #f1f1f1;
+  width: 87%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+}
+
+
+
+/*end media style*/
+
+
+/*start page contant style*/
+.row-h3{
+    margin-top:30%;
+    
+}
+
+/*slider*/
+
+logo-slider {
+  --image-size: 100px;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+logo-slider:hover div {
+  animation-play-state: paused;
+}
+logo-slider:hover img{
+    box-shadow:5px 5px 10px #540938;
+}
+
+logo-slider div {
+  display: flex;
+  position: relative;
+  animation: marquee 20s linear infinite;
+  justify-content: space-around;
+}
+logo-slider img {
+  border-radius: 20%;  
+  display: block;
+  min-width: var(--image-size);
+  height: var(--image-size);
+  margin: 0 1vw;
+}
+logo-slider:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), white);
+}
+@media (max-width: 900px) {
+  logo-slider {
+    --image-size: 50px;
+    --image-size: min(max(50px, 10vw), 100px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*end page contant style*/
+
+/*startour team*/
+.ourteam .team {
+    float: left;
+    width: 24%;
+    height: 300px;
+    text-align: center;
+    color: #aaa;
+    margin-right:1%;
+    margin-bottom:4%;
+   
+}
+
+.ourteam h5{
+	margin-top: 10%;
+}
+.ourteam .team .box{
+    height:70%;
+    width:70%;
+    margin:auto;
+}
+
+.ourteam .team .box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter:gray;
+    filter: grayscale(100%);
+    margin-top:10%
+}
+.ourteam .team:hover img{
+    filter:none;
+   /* transform:translateY(15px);
+   transition:cubic-bezier(5px);*/
+   box-shadow:5px 5px 10px #540938;
+   border-bottom:6px solid#7e9f9d;
+   margin-top:0;
+
+}
+
+
+.ourteam .team:hover, .ourteam .team:hover p {
+    color: #333;
+    cursor:pointer;
+}
+
+
+.ourteam .team p {
+    font-size: 12px
+}
+.center-p{
+	text-align:center;
+	margin:30px;
+}
+.team-text{
+	width:80%;
+	margin: auto;
+	margin-top:5%;
+	border-radius: 30px;
+	border-left:1px solid #768086;
+	border-top:1px solid #768086; 
+	box-shadow: 40px 40px #7e9f9d, 5px 5px 10px inset #7e9f9d;
+}
+
+
+/**end our team*/
+
+/**start contact*/
+
+form {
+	width: 75%;
+	margin: 15% auto 0 auto;
+	color: #597a7c;
+}
+
+form h1 {
+	font-size: 2em;
+	margin: 0 0 25px 0;
+}
+
+form div {
+	margin: 0 0 15px 0;
+	position: relative;
+}
+
+form > div:last-of-type {
+	margin-top: 20px;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+form input,form textarea {
+	padding: 5px 12px;
+	outline: none;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 20px;
+	width: 80%;
+	color: #3d0729;
+	font-size: .9em;
+    background-color:#48d5b7;
+    opacity: .4;
+}
+
+form input[type="submit"] {
+	width: auto;
+	padding: 5px 20px;
+	cursor: pointer;
+	font-size: .8rem;
+	color: #000;
+	border: 2px solid #3d0729;
+	background-color:  #48d5b7;
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+}
+form input[type="submit"]:hover{
+    color: #fff;
+	border: 2px solid #3d0729;
+	background-color:  #3d0729;
+}
+form input[type="checkbox"] {
+	width: auto;
+	position: relative;
+	top: -2px;
+}
+
+form input[type="checkbox"] + label {
+	display: inline;
+	padding-left: 10px;
+}
+
+input:required {
+	border: 2px solid #a51e74;
+}
+
+input:required + label{
+	color: #a51e74;
+}
+
+input:required +label::after{
+	content: 'required';
+	font-style: italic;
+	padding-left: 10px;
+	font:.8em;
+}
+
+input:required + label::before{
+	content: '*';
+	position: absolute;
+	top:-2px;
+	left: -20px;
+	display: block;
+	width: 20px;
+	height: 40px;
+	
+}
+
+
+
+
+
+
+/**end contact*/
+
+
+/*parent*/
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+
+
+.contain {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    display:table-cell;
+    padding: 10px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+
+
+/* When you mouse over the container, fade in the overlay title */
+.contain:hover .overlay {
+  opacity: 1;
+}
+
+/*start footer style*/
+
+/*end footer style*/
