@@ -48,8 +48,12 @@
     <div class="container">
 
         <h3>Realtime Relations Diagram</h3>
-        <div class="imge">
-            <img src="image/images (4).jpg">
+        <div class="video">
+            <video controls onclick="this.play()">
+                <source src="image/nomia.mp4" type="video/mp4">
+              
+                Your broweser does not support HTML5 video.
+            </video>
         </div>
         <div class="text content">
             <p>
@@ -79,10 +83,11 @@
             What is an Entity Relationship Diagram (ERD)? <br> ER Diagrams are most often used to design or debug relational
             databases in the fields of ... ovals and connecting lines to depict the interconnectedness of entities, relationships
             and their attributes. ... three schema approach, which divides the information a bit</p>
-            <p class=>In other words, ER diagrams help to explain the logical structure of databases.</p>
+            <p class="hide-p">In other words, ER diagrams help to explain the logical structure of databases.</p>
 
-      
-            <a href="#" class="more-btn">read more...</a>
+            <div class="hide1"><button class="more-btn">read less...</button></div>
+            <div class="show"><button class="more-btn">read more...</button></div>
+        
         </div>
 
 
@@ -112,10 +117,11 @@
         
         
         <!--start scripts-->
-        <script src="js/script.js"></script>
+        
         <script src="js/jquery-3.4.1.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
         <!--end scripts-->
 </body>
 </html>

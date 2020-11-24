@@ -2,9 +2,7 @@
 * {box-sizing: border-box}
 
 
-.clearfix{
-	clear: both;
-}
+
 h3{
     color:#597a7c;
     
@@ -195,7 +193,7 @@ section:nth-of-type(even) .imge img{
 
 section h3{
 	width:100%;
-	
+	margin-top:10px;
 	padding-top:10px
 }
 .text {

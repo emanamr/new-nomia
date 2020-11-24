@@ -17,3 +17,37 @@
     border-radius: 5px;
 }
 
+.hide-p, .hide1{
+    display:none;
+}
+
+/*video*/
+@media only screen and (min-width: 35em){
+.video video{
+    width: 100%;
+    height: 100%;
+   
+    margin-top: 10%;
+}
+.video{
+    width: 50%;
+    height: 60%;
+    float: left;
+  
+} 
+}
+
+@media only screen and (max-width: 35em){
+.video video{
+    width: 100%;
+    height: 100%;
+   
+    margin-top: 5%;
+}
+.video{
+    width: 90%;
+    height: 60%;
+   margin:auto;
+  
+} 
+}
