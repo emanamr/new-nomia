@@ -1,14 +1,39 @@
 /*start basic style*/
-* {box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+ 
+}
 
 
 
 h3{
     color:#597a7c;
-    
+    text-shadow: -2px -2px 10px #fff,
+	 2px 2px 10px #fff,
+    1px 1px 20px #48d5b7,
+    0 0 40px #48d5b7,
+    1px 1px 60px #540938,
+	  0 0 80px #540938;
+	 position: relative;
 }
+
+h3:before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0;
+    width: 38px;
+    border-bottom: 3px solid;
+
+}
+
 hr.soften {
-    margin-top:5% ;
+  margin-top:5% ;
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
@@ -170,6 +195,12 @@ section:nth-of-type(even) .imge img{
 .row-h3{
   margin-top:35% !important; 
 }
+
+.team-text{
+	width:80%;
+	margin:10% auto;
+  padding: 2%;
+}
 }
 
 
@@ -178,8 +209,8 @@ section:nth-of-type(even) .imge img{
     font-size: 1.2em;
   }
 	section{
-	margin-top: 1rem !important;
-    height: 38em !important;
+	margin-top: 2rem !important;
+    height: 43em !important;
 }
 	section .text {
 	margin-left: auto !important;
@@ -197,7 +228,7 @@ section h3{
 	padding-top:10px
 }
 .text {
-	padding: 4em;
+	padding: 2em;
     height: 100%;
 	border-radius: none !important;
     border: 1px solid #768086;
@@ -217,23 +248,13 @@ section .imge{
     float: none;
     margin: auto;
 }
-.row{
-	width:100%;
-	
-}
 .hidden{
 	display: none;
 }
-.column {
-  float: left;
-  width: 33% !important;
-  padding: 5px;
-  height:150px;
-  
-}
+
 .row-h3{
 
-	margin-top: 98% !important;
+	margin-top: 35% !important;
     margin-bottom: 5%;
    
 }
@@ -249,7 +270,9 @@ section .imge{
 }
 
 .team-text{
-	margin-top:20% !important;
+  margin: 20% auto !important;
+  padding:5%;
+  width:80%;
 }
 
 .contact form input{
@@ -298,10 +321,6 @@ section .imge{
 
 
 /*start page contant style*/
-.row-h3{
-    margin-top:30%;
-    
-}
 
 /*slider*/
 
@@ -363,6 +382,9 @@ logo-slider:after {
 /*end page contant style*/
 
 /*startour team*/
+.ourteam{
+  height: 20em;
+}
 .ourteam .team {
     float: left;
     width: 24%;
@@ -416,13 +438,10 @@ logo-slider:after {
 	margin:30px;
 }
 .team-text{
-	width:80%;
-	margin: auto;
-	margin-top:5%;
 	border-radius: 30px;
 	border-left:1px solid #768086;
 	border-top:1px solid #768086; 
-	box-shadow: 40px 40px #7e9f9d, 5px 5px 10px inset #7e9f9d;
+	box-shadow: 20px 20px 30px #7e9f9d, 5px 5px 10px inset #7e9f9d;
 }
 
 
@@ -529,8 +548,6 @@ input:required + label::before{
 
 
 /*parent*/
-
-
 /* Container needed to position the overlay. Adjust the width as needed */
 
 
@@ -609,12 +626,7 @@ input:required + label::before{
 .social-btns .btn.instgram .fa {
   color: #dc4a38;
 }
-.social-btns .btn.dribbble:before {
-  background-color: #f26798;
-}
-.social-btns .btn.dribbble .fa {
-  color: #f26798;
-}
+
 .social-btns .btn.linkedin:before {
   background-color: #00aff0;
 }

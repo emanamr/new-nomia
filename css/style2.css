@@ -35,19 +35,102 @@
     float: left;
   
 } 
+.row{
+    width: 90%;
+    margin: auto;
+    padding:9% 5%;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.c-image{
+    width:70%;
+}
 }
 
 @media only screen and (max-width: 35em){
+
 .video video{
     width: 100%;
     height: 100%;
-   
     margin-top: 5%;
 }
 .video{
     width: 90%;
     height: 60%;
    margin:auto;
-  
 } 
+
+.row{
+    width: 100% !important;
+    margin: auto;
+   
+}
+.column {
+  float: left;
+  width: 22% !important;
+    padding: 10% 10px;
+    margin: auto;
+}
+
+.c-image{
+    width:100%;
+}
+
+.card{
+    width: 60% !important;
+    
+    margin: 5% auto !important;
+    font-size: 1em !important;
+}
+
+
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column:hover{
+    cursor: pointer;
+}
+
+
+/*pricing*/
+.price{
+    
+    width:95vw;
+    height:90vh ;
+
+}
+.price img{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    box-shadow: 20px 20px 30px #7e9f9d, 5px 5px 10px inset #7e9f9d;
+}
+
+/*card*/
+
+.card{
+    background-color:  rgba(127, 187, 183, 0.7);
+    box-shadow: 5px 5px 15px #fff inset;
+}
+.card:hover{
+    background-color: rgba(72,213,183,.5);
+    transform:translateY(-15px);
+    transition:cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition-delay: .1s;
+    box-shadow: 5px 5px 10px #540938, 5px 5px 15px #fff inset;
+    cursor: pointer;
+}
+.center-btn{
+    width: 20%;
+    margin:5% auto 10%  40%;
 }
