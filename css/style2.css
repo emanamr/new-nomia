@@ -4,7 +4,7 @@
     text-decoration: none;
     color:rgb(89,122,124);
     border:1px solid rgb(88,120,122);
-       padding:5px;
+    padding:5px;
 
     border-radius: 5px;
 }
@@ -20,14 +20,17 @@
 .hide-p, .hide1{
     display:none;
 }
-
+.team-text2{
+    margin: 20% auto !important;
+    padding:5%;
+    width:80%;
+}
 /*video*/
 @media only screen and (min-width: 35em){
 .video video{
     width: 100%;
     height: 100%;
-   
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .video{
     width: 50%;
@@ -35,6 +38,12 @@
     float: left;
   
 } 
+.section4{
+    height: 30em !important;    
+}
+.section4 .imge{
+    margin:5% auto !important;
+}
 .row{
     width: 90%;
     margin: auto;
@@ -55,7 +64,7 @@
 .video video{
     width: 100%;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .video{
     width: 90%;
@@ -113,7 +122,7 @@
     width: 100%;
     height: 100%;
     margin:auto;
-    box-shadow: 20px 20px 30px #7e9f9d, 5px 5px 10px inset #7e9f9d;
+    box-shadow: 5px 5px 10px inset #7e9f9d;
 }
 
 /*card*/
@@ -133,4 +142,50 @@
 .center-btn{
     width: 20%;
     margin:5% auto 10%  40%;
+}
+
+/* price form*/
+.price .table-row{
+    display:table-row;
+    width:80%;
+    margin:auto;
+}
+.table-row .table-cell{
+    display: table-cell;
+}
+.table-row:nth-of-type(even){
+    background-color: rgba(72,213,185,.3);
+  
+    border:1px solid rgb(89,122,124);
+
+}
+.table-row:nth-of-type(odd){
+    background-color: rgba(72,213,185,.7);
+}
+
+.table-cell:nth-of-type(odd){
+    width: 15%;
+    
+}
+.table-cell:nth-of-type(odd) input{
+    width:80% ;
+    margin: 3% auto;
+    padding: 5px;
+}
+
+.table-cell:nth-of-type(odd) p{
+    margin-bottom: 0;
+}
+.table-cell:nth-of-type(even){
+    margin:5% 10%;
+    width: 30%;
+}
+
+.table-cell:nth-of-type(even) input[type=range]{
+    width: 80%;
+    margin: 2% 6%;
+}
+
+.table-cell:nth-of-type(even) pre{
+    margin: 3% 6%;
 }
